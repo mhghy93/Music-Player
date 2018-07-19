@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="assamese_songs">Assamese Songs</string>
+    <string name="hindi_songs">Hindi Songs</string>
+    <string name="english_songs">English Songs</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="now_playing_song_title">Song</string>
+    <string name="now_playing_artist_name">Artist</string>
+    <string name="play_button">Play</string>
+</resources>
