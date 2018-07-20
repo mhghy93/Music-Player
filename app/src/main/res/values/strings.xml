@@ -7,4 +7,5 @@
     <string name="now_playing_song_title">Song</string>
     <string name="now_playing_artist_name">Artist</string>
     <string name="play_button">Play</string>
+    <string name="home_menu">Home</string>
 </resources>

@@ -8,6 +8,21 @@
 
 
     <LinearLayout
+        android:id="@+id/nowPlaying_category"
+        style="@style/ChildLinearLayoutStyle"
+        android:background="@color/nowPlayingColor">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/now_playing" />
+
+        <ImageView
+            style="@style/ImageViewStyle"
+            android:src="@drawable/sharp_play_circle_filled_white_black_48" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/assamese_category"
         style="@style/ChildLinearLayoutStyle"
         android:background="@color/assameseSongColor">
@@ -18,7 +33,7 @@
 
         <ImageView
             style="@style/ImageViewStyle"
-            android:src="@drawable/play" />
+            android:src="@drawable/sharp_play_circle_filled_white_black_48" />
 
     </LinearLayout>
 
@@ -33,7 +48,7 @@
 
         <ImageView
             style="@style/ImageViewStyle"
-            android:src="@drawable/play" />
+            android:src="@drawable/sharp_play_circle_filled_white_black_48" />
 
     </LinearLayout>
 
@@ -48,7 +63,7 @@
 
         <ImageView
             style="@style/ImageViewStyle"
-            android:src="@drawable/play" />
+            android:src="@drawable/sharp_play_circle_filled_white_black_48" />
 
     </LinearLayout>
 

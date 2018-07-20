@@ -3,6 +3,8 @@ package com.example.android.musicplayer;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -41,5 +43,34 @@ public class EnglishSongsActivity extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.english_songs_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.home_menu:
+                startActivity(new Intent(this, MainActivity.class));
+                break;
+
+            case R.id.now_playing_menu:
+                startActivity(new Intent(this, NowPlayingActivity.class));
+                break;
+
+            case R.id.assamese_songs_menu:
+                startActivity(new Intent(this, AssameseSongsActivity.class));
+                break;
+
+            case R.id.hindi_songs_menu:
+                startActivity(new Intent(this, HindiSongsActivity.class));
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

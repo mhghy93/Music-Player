@@ -13,6 +13,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //now Playing
+        LinearLayout nowPlayingLayout = (LinearLayout) findViewById(R.id.nowPlaying_category);
+        nowPlayingLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent assameseSongsIntent = new Intent(MainActivity.this, NowPlayingActivity.class);
+                startActivity(assameseSongsIntent);
+            }
+        });
+
+
         //Assamese Song
         LinearLayout assameseSongLayout = (LinearLayout) findViewById(R.id.assamese_category);
         assameseSongLayout.setOnClickListener(new View.OnClickListener() {
